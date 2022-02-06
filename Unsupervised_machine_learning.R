@@ -8,7 +8,7 @@ library(caret)
 library(rpart.plot)
 
 #Load datasets
-setwd("~/Documents/UW Data Analytics")
+setwd("~/Documents/RStudio_Uploads/College_admissions_data_set_analysis")
 colleges_df = read.delim("colleges.tsv", sep = '\t',  header = TRUE)
 colleges_data_dictionary_df = read.delim("colleges_data_dictionary.tsv", sep = '\t',  header = TRUE)
 
