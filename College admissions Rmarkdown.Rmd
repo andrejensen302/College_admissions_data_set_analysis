@@ -1,0 +1,24 @@
+---
+title: "College_admissions_Rmarkdown"
+output: github_document
+---
+
+```{r}
+
+#Load libraries
+
+library(arules)
+library(dplyr)
+library(ggplot2)
+library(GGally)
+library(caret)
+library(rpart.plot)
+
+
+```
+
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
