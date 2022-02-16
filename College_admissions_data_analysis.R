@@ -54,6 +54,7 @@ help('subset')
 
 ############R Script for section 2############
 
+
 college_features2 = colleges_df %>% select(institution_name, first_gen_share, poverty_rate, 
                                            family_income_median, median_earnings, pell_grant_rate, top_ten) %>% na.omit() %>% distinct()
 
@@ -67,6 +68,7 @@ kmeans_cluster_5$centers
 
 college_features2$cluster_number = factor(college_features2$cluster_number)
 
+#Confirm that cluster number converted to a factor variable type.
 is.factor(college_features2$cluster_number)
 
 grant_candidates2 = college_features2 %>% filter(cluster_number == '1')
@@ -85,7 +87,6 @@ ggplot(college_features2, aes(x = family_income_median,
 
 ############R Script for section 3############
 
-#1) Subset your colleges dataset using the following code. 
 #The !is.na(sat_verbal_quartile_1) removes universities that do not have SAT admission criteria, 
 #so we are looking at similar degree-granting universities.
 
