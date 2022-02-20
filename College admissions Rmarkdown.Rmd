@@ -29,6 +29,8 @@ colleges_data_dictionary_df = read.delim("colleges_data_dictionary.tsv", sep = '
 
 ```{r, echo=FALSE}
 
+colleges_df %>% glimpse()
+
 #Cluster to identity colleges to receive grant money (high numbers of low-income, fist generation college attendees)
 #3 clusters
 
