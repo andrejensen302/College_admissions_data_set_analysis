@@ -13,6 +13,8 @@ setwd("~/Documents/UW Data Analytics")
 colleges_df = read.delim("colleges.tsv", sep = '\t',  header = TRUE)
 colleges_data_dictionary_df = read.delim("colleges_data_dictionary.tsv", sep = '\t',  header = TRUE)
 
+colleges_df %>% glimpse()
+
 ############R Script for section 1############
 
 #Cluster to identity colleges to receive grant money (high numbers of low-income, fist generation college attendees)
