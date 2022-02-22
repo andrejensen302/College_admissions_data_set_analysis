@@ -3,7 +3,15 @@
 
 The following is some of my basic observations and analysis that I found within the College Admissions dataset.
 
-## Problem #1: A granting agency wants to identify colleges that have high numbers of low-income, and first generation college attendees to give those colleges additional funding. ##
+Libraries Used
+```
+library(dplyr)
+library(ggplot2)
+library(ggdendro)
+library(stringr)
+```
+
+
 
 - The code snippet below showed that there are 4,494 distinct institution names in the original dataset.
 <table><tbody><tr>
@@ -31,8 +39,3 @@ I first wanted to analyze the data on a more granular level based on similar att
 <img src="https://github.com/andrejensen302/College_admissions_data_set_analysis/blob/13295b4fa6a5e57993a504cdff39ec55b197119b/College-admissions-Rmarkdown_files/figure-gfm/unnamed-chunk-5-1.png">
 
 - As we can see in both of table and ggplots, the majority of the clusters did not cross the $60,000 threshold for family earnings and $50,000/year post-graduate student earnings.
-
-### Hierarchical Cluster Analysis ###
-
-
-
