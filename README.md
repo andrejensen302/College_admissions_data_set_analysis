@@ -119,7 +119,9 @@ I first wanted to analyze the data on a more granular level based on similar att
 ### Kmeans Clustering - Three Clusters ###
                                           
 ```
-#Split into three clusters. And show the centers of each clusters based on (percentage share of first generation students, poverty rate, median family income, median post-graduate earnings, pell grant recipient rate, and percentage of students (in each cluster) attending top 10 universities.
+#Split into three clusters. And show the centers of each clusters based on 
+#percentage share of first generation students, poverty rate, median family income, median post-graduate earnings, 
+#pell grant recipient rate, and percentage of students (in each cluster) attending top 10 universities.
 
 college_features = colleges_df %>% select(institution_name, first_gen_share, poverty_rate, 
                                           family_income_median, median_earnings, pell_grant_rate, top_ten) %>% na.omit() %>% distinct()
